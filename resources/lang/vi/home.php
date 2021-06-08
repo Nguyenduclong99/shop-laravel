@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'branch' => 'Nike Fake Website',
+    'branch' => '1999Sneaker',
     'new' => 'Mới ra mắt',
     'empty' => 'Không có mặt hàng nào.',
     'category_shoes' => "Giày :name",

@@ -13,7 +13,7 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="address-text">
-                                    <p>193 Nguyen Luong Bang, Da Nang, Viet Nam</p>
+                                    <p>120 Đình Thôn, Mỹ Đình 1, Nam Từ Liêm, Hà Nội</p>
                                 </div>
                             </li>
                             <li>
@@ -21,7 +21,7 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="address-text">
-                                    <p>vanbakhanh@gmail.com</p>
+                                    <p>longanh1199@gmail.com</p>
                                 </div>
                             </li>
                             <li>
@@ -29,7 +29,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="address-text">
-                                    <p>09357548xx</p>
+                                    <p>03876788xx</p>
                                 </div>
                             </li>
                         </ul>
@@ -39,13 +39,13 @@
                         <h3 class="title">@lang('layouts.follow_on_social')</h3>
                         </div>
                         <div class="col">
-                        <a href="https://facebook.com/vanbakhanh" target="_blank" class="mr-4"><i
+                        <a href="https://www.facebook.com/long.utehy.99/" target="_blank" class="mr-4"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/vanbakhanh" target="_blank" class="mr-4"><i
+                        <a href="" target="_blank" class="mr-4"><i
                                 class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/vanbakhanh/" target="_blank" class="mr-4"><i
+                        <a href="" target="_blank" class="mr-4"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/vanbakhanh/"><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
