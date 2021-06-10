@@ -19,7 +19,7 @@ class ProductController extends Controller
     protected $sizeRepository;
 
     /**
-     * Create a new controller instance.
+     * Tạo controller mới
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Hiển thị danh sách sản phẩm
      *
      * @return \Illuminate\Http\Response
      */
@@ -48,7 +48,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Hiển thị form để tạo sản phẩm mới.
      *
      * @return \Illuminate\Http\Response
      */
@@ -64,7 +64,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Lưu trữ một sản phẩm được tạo trong storage
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -83,7 +83,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Hiển thị dữ liệu được chỉ định.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -106,7 +106,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Hiển thị form sửa sản phẩm
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -130,7 +130,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update thông tin trong storage
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -150,7 +150,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Xóa sản phẩm trong storage
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
