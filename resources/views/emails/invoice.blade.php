@@ -11166,31 +11166,30 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Your order has been received and is currently being processed. Your order details are shown
-                            below
-                            for your reference:</p>
+                        <p>Đơn đặt hàng của bạn đã được nhận và hiện đang được xử lý. Chi tiết đơn đặt hàng của bạn được hiển thị
+                             phía dưới cho bạn tham khảo:</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="float-left">Order #{{ $order->id }}</h4>
-                        <h4 class="float-right">Total ${{ $order->total }}</h4>
+                        <h4 class="float-left">Đơn hàng #{{ $order->id }}</h4>
+                        <h4 class="float-right">Tổng tiền ${{ $order->total }}</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="float-left">Created at {{ $order->created_at }}</p>
+                        <p class="float-left">Thời gian {{ $order->created_at }}</p>
                     </div>
                 </div>
                 <table class="table table-bordered text-center">
                     <thead>
                         <tr>
-                            <th scope="col">Items</th>
+                            <th scope="col">Tên sản phẩm</th>
                             <th scope="col">Size</th>
-                            <th scope="col">Color</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Total</th>
+                            <th scope="col">Màu sắc</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Thành tiền</th>
                         </tr>
                     </thead>
                     <tbody>
