@@ -11159,14 +11159,12 @@
     <div class="container">
         <div class="row justify-content-center my-4">
             <div class="col-md-10 bg-white rounded shadow py-4">
-                <p>Hi {{ $user->profile->full_name }},</p>
-                <p>Thanks for registering for an account on Nike! Before we get started, we just need to confirm that
-                    this
-                    is you. Click below to verify your email address:</p>
+                <p>Chào {{ $user->profile->full_name }},</p>
+                <p>Cảm ơn vì đã đăng kí website 1999Sneaker ! Trước khi bắt đầu, chúng tôi cần xác nhận đó là bạn. Click vào link bên dưới để xác nhận:</p>
                 <a class="btn btn-primary mb-4" href="{{ route('user.verify', $user->token) }}" target="_blank">Verify
                     Email</a>
-                <p>Good luck! Hope it works.</p>
-                <p>Van Ba Khanh</p>
+                <p>Chúc bạn một ngày tốt lành !</p>
+                <p>Nguyen Duc Long</p>
             </div>
         </div>
     </div>
