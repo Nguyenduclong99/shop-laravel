@@ -111,10 +111,10 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @if ('vi' == session()->get('website_language', 'en'))
-                                    {{ trans('layouts.vietnamese') }}
-                                    @else
+                                   @if ('en' == session()->get('website_language', 'vi'))
                                     {{ trans('layouts.english') }}
+                                    @else
+                                    {{ trans('layouts.vietnamese') }}
                                     @endif
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right text-center"
