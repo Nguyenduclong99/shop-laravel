@@ -14,7 +14,7 @@ Based on Laravel Framework 5.6.
 - `php artisan storage:link`
 - `npm install`
 - `npm run dev`
-
+- create new .env file and config mail, facebook login,...
 ## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
