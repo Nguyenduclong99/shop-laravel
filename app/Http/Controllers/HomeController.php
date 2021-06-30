@@ -56,7 +56,7 @@ class HomeController extends Controller
 
     /**
      * Display products of men follow to category.
-     */
+     */ 
     public function men($id)
     {
         return $this->getProductsFollowGender($id, Product::MEN);

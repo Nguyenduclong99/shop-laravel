@@ -38,7 +38,6 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
     public function createProduct($product, $color, $size)
     {
         $product = $this->model()->create($product);
-
         $product->colors()->attach($color);
         $product->sizes()->attach($size);
 
@@ -47,7 +46,7 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
 
     public function updateProduct($product, $color, $size, $id)
     {
-        $oldProduct = $this->model()->findOrFail($id);
+        $oldProduct = $this->model()->findOrFail($id); 
         $oldProduct->update($product);
 
         $oldProduct->colors()->sync($color);

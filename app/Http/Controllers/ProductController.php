@@ -59,7 +59,7 @@ class ProductController extends Controller
         $sizes = $this->sizeRepository->pluck('name', 'id');
 
         return view('backend.product.create', compact([
-            'categories', 'colors', 'sizes',
+            'categories', 'colors', 'sizes'
         ]));
     }
 
@@ -71,9 +71,8 @@ class ProductController extends Controller
      */
     public function store(ProductStoreRequest $request)
     {
-        $product = $request->only('name', 'description', 'gender', 'price', 'category_id');
+        $product = $request->only('name', 'description', 'gender', 'price', 'category_id', 'quantity');
         $product = $this->productRepository->uploadImage($request, $product);
-
         $color = $request->color;
         $size = $request->size;
 
@@ -125,7 +124,7 @@ class ProductController extends Controller
         $selectedSizes = $this->productRepository->getSelectedSizes($product);
 
         return view('backend.product.edit', compact([
-            'product', 'colors', 'selectedColors', 'sizes', 'selectedSizes', 'categories', 'selectedCategory',
+            'product', 'colors', 'selectedColors', 'sizes', 'selectedSizes', 'categories', 'selectedCategory'
         ]));
     }
 
@@ -138,7 +137,7 @@ class ProductController extends Controller
      */
     public function update(ProductUpdateRequest $request, $id)
     {
-        $product = $request->only('name', 'description', 'gender', 'price', 'category_id');
+        $product = $request->only('name', 'description', 'gender', 'price', 'category_id', 'quantity');
         $product = $this->productRepository->uploadImage($request, $product);
 
         $color = $request->color;

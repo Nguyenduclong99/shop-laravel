@@ -101,7 +101,7 @@
                     <div class="row mb-4">
                         <a href="{{ route('order.status.update', $orderDetail->id) }}"
                             class="btn btn-primary btn-block">{{ trans('order.shipped') }}</a>
-                    </div>
+                    </div> 
                     @endif
                 </div>
             </div>

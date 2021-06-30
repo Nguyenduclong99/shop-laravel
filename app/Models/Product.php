@@ -22,8 +22,9 @@ class Product extends Model
         'price',
         'image',
         'category_id',
+        'quantity'
     ];
-
+ 
     public function category()
     {
         return $this->belongsTo('App\Models\Category');

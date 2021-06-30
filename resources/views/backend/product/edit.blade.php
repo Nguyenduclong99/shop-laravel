@@ -71,6 +71,10 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label>Số lượng</label>
+                    {{ Form::number('quantity', $product->quantity, ['class' => 'form-control']) }}
+                </div>
+                <div class="form-group">
                     <label>{{ trans('product.image') }}</label>
                     {{ Form::file('image[]', ['class' => 'form-control-file', 'multiple']) }}
                 </div>

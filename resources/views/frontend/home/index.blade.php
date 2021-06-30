@@ -19,6 +19,13 @@
                 </div>
             </div>
             <div class="carousel-item">
+            <img src="/storage/cover/sample-211.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 data-aos="fade-left">Converse x FOG</h1>
+                <p data-aos="fade-right">Lightweight support for each cut, stride or strike.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="/storage/cover/5.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block text-left text-dark">
                     <h1>NIKE AIR MAX</h1>

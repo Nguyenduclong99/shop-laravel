@@ -70,7 +70,7 @@ Route::group(['middleware' => 'locale'], function () {
         Route::resource('/review', 'ReviewController');
 
         // Order
-        Route::group(['prefix' => 'order'], function () {
+        Route::group(['prefix' => 'order'], function () { 
             Route::get('/', 'OrderController@manager')->name('order.manager');
             Route::get('/{status}', 'OrderController@managerStatus')->name('order.manager.status');
             Route::get('/pending/{id}', 'OrderController@managerDetail')->name('order.detail.pending');
@@ -144,5 +144,5 @@ Route::group(['middleware' => 'locale'], function () {
         Route::delete('/remove/{rowId}', 'CartController@removeItem')->name('cart.remove');
         Route::put('/update', 'CartController@update')->name('cart.update');
         Route::get('/checkout', 'CartController@checkout')->name('checkout');
-    });
+    }); 
 });

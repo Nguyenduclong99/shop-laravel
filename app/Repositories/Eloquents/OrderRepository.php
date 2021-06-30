@@ -6,6 +6,8 @@ use App\Models\Order;
 use App\Models\User;
 use App\Repositories\Contracts\OrderRepositoryInterface;
 use App\Repositories\Eloquents\BaseRepository;
+use Illuminate\Support\Facades\DB;
+
 use Auth;
 
 class OrderRepository extends BaseRepository implements OrderRepositoryInterface
@@ -39,6 +41,14 @@ class OrderRepository extends BaseRepository implements OrderRepositoryInterface
 
     public function updateStatusOrder($id)
     {
+        $order = DB::table('orders')->where([['id', $id],['status', 1]])->get();
+        if($order) {
+                $list = DB::table('order_product')->where('order_id', $id)->get();
+            // dd($list);
+                foreach($list as $key => $item) {
+                    DB::table('products')->where('id', $item->product_id)->decrement('quantity', $item->qty);
+                }
+        }
         return $this->model()->where('id', $id)->increment('status');
     }
 
