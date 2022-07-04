@@ -27,7 +27,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-logo">
-                    <img src="{{ asset('storage/logo/logo-black.png') }}" width="100%" height="100%" alt="logo">
+                    <img src="{{ asset('storage/logo/logo-black.png') }}" width="5%" height="8%" alt="logo">
                 </li>
                 <li>
                     <a href="{{ route('admin.index') }}"><i
